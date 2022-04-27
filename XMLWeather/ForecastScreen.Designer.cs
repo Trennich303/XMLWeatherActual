@@ -43,6 +43,18 @@
             this.max3 = new System.Windows.Forms.Label();
             this.min3 = new System.Windows.Forms.Label();
             this.searchLabel = new System.Windows.Forms.Label();
+            this.date4 = new System.Windows.Forms.Label();
+            this.weatherOutput4 = new System.Windows.Forms.Label();
+            this.max4 = new System.Windows.Forms.Label();
+            this.min4 = new System.Windows.Forms.Label();
+            this.max5 = new System.Windows.Forms.Label();
+            this.min5 = new System.Windows.Forms.Label();
+            this.weatherOutput5 = new System.Windows.Forms.Label();
+            this.date5 = new System.Windows.Forms.Label();
+            this.max6 = new System.Windows.Forms.Label();
+            this.min6 = new System.Windows.Forms.Label();
+            this.weatherOutput6 = new System.Windows.Forms.Label();
+            this.date6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // forecastLabel
@@ -161,7 +173,7 @@
             this.date3.AutoSize = true;
             this.date3.BackColor = System.Drawing.Color.Transparent;
             this.date3.ForeColor = System.Drawing.Color.White;
-            this.date3.Location = new System.Drawing.Point(3, 185);
+            this.date3.Location = new System.Drawing.Point(3, 189);
             this.date3.Name = "date3";
             this.date3.Size = new System.Drawing.Size(30, 13);
             this.date3.TabIndex = 78;
@@ -173,7 +185,7 @@
             this.weatherOutput3.BackColor = System.Drawing.Color.Transparent;
             this.weatherOutput3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weatherOutput3.ForeColor = System.Drawing.Color.White;
-            this.weatherOutput3.Location = new System.Drawing.Point(75, 183);
+            this.weatherOutput3.Location = new System.Drawing.Point(75, 187);
             this.weatherOutput3.Name = "weatherOutput3";
             this.weatherOutput3.Size = new System.Drawing.Size(0, 15);
             this.weatherOutput3.TabIndex = 79;
@@ -184,7 +196,7 @@
             this.max3.BackColor = System.Drawing.Color.Transparent;
             this.max3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.max3.ForeColor = System.Drawing.Color.DarkRed;
-            this.max3.Location = new System.Drawing.Point(214, 185);
+            this.max3.Location = new System.Drawing.Point(214, 189);
             this.max3.Name = "max3";
             this.max3.Size = new System.Drawing.Size(0, 13);
             this.max3.TabIndex = 81;
@@ -195,7 +207,7 @@
             this.min3.BackColor = System.Drawing.Color.Transparent;
             this.min3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.min3.ForeColor = System.Drawing.Color.Blue;
-            this.min3.Location = new System.Drawing.Point(176, 185);
+            this.min3.Location = new System.Drawing.Point(176, 189);
             this.min3.Name = "min3";
             this.min3.Size = new System.Drawing.Size(0, 13);
             this.min3.TabIndex = 80;
@@ -212,12 +224,156 @@
             this.searchLabel.Text = "Search";
             this.searchLabel.Click += new System.EventHandler(this.searchLabel_Click);
             // 
+            // date4
+            // 
+            this.date4.AutoSize = true;
+            this.date4.BackColor = System.Drawing.Color.Transparent;
+            this.date4.ForeColor = System.Drawing.Color.White;
+            this.date4.Location = new System.Drawing.Point(3, 236);
+            this.date4.Name = "date4";
+            this.date4.Size = new System.Drawing.Size(30, 13);
+            this.date4.TabIndex = 83;
+            this.date4.Text = "Date";
+            // 
+            // weatherOutput4
+            // 
+            this.weatherOutput4.AutoSize = true;
+            this.weatherOutput4.BackColor = System.Drawing.Color.Transparent;
+            this.weatherOutput4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weatherOutput4.ForeColor = System.Drawing.Color.White;
+            this.weatherOutput4.Location = new System.Drawing.Point(75, 234);
+            this.weatherOutput4.Name = "weatherOutput4";
+            this.weatherOutput4.Size = new System.Drawing.Size(0, 15);
+            this.weatherOutput4.TabIndex = 84;
+            // 
+            // max4
+            // 
+            this.max4.AutoSize = true;
+            this.max4.BackColor = System.Drawing.Color.Transparent;
+            this.max4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.max4.ForeColor = System.Drawing.Color.DarkRed;
+            this.max4.Location = new System.Drawing.Point(214, 236);
+            this.max4.Name = "max4";
+            this.max4.Size = new System.Drawing.Size(0, 13);
+            this.max4.TabIndex = 86;
+            // 
+            // min4
+            // 
+            this.min4.AutoSize = true;
+            this.min4.BackColor = System.Drawing.Color.Transparent;
+            this.min4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.min4.ForeColor = System.Drawing.Color.Blue;
+            this.min4.Location = new System.Drawing.Point(176, 236);
+            this.min4.Name = "min4";
+            this.min4.Size = new System.Drawing.Size(0, 13);
+            this.min4.TabIndex = 85;
+            // 
+            // max5
+            // 
+            this.max5.AutoSize = true;
+            this.max5.BackColor = System.Drawing.Color.Transparent;
+            this.max5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.max5.ForeColor = System.Drawing.Color.DarkRed;
+            this.max5.Location = new System.Drawing.Point(214, 281);
+            this.max5.Name = "max5";
+            this.max5.Size = new System.Drawing.Size(0, 13);
+            this.max5.TabIndex = 90;
+            // 
+            // min5
+            // 
+            this.min5.AutoSize = true;
+            this.min5.BackColor = System.Drawing.Color.Transparent;
+            this.min5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.min5.ForeColor = System.Drawing.Color.Blue;
+            this.min5.Location = new System.Drawing.Point(176, 281);
+            this.min5.Name = "min5";
+            this.min5.Size = new System.Drawing.Size(0, 13);
+            this.min5.TabIndex = 89;
+            // 
+            // weatherOutput5
+            // 
+            this.weatherOutput5.AutoSize = true;
+            this.weatherOutput5.BackColor = System.Drawing.Color.Transparent;
+            this.weatherOutput5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weatherOutput5.ForeColor = System.Drawing.Color.White;
+            this.weatherOutput5.Location = new System.Drawing.Point(75, 279);
+            this.weatherOutput5.Name = "weatherOutput5";
+            this.weatherOutput5.Size = new System.Drawing.Size(0, 15);
+            this.weatherOutput5.TabIndex = 88;
+            // 
+            // date5
+            // 
+            this.date5.AutoSize = true;
+            this.date5.BackColor = System.Drawing.Color.Transparent;
+            this.date5.ForeColor = System.Drawing.Color.White;
+            this.date5.Location = new System.Drawing.Point(3, 281);
+            this.date5.Name = "date5";
+            this.date5.Size = new System.Drawing.Size(30, 13);
+            this.date5.TabIndex = 87;
+            this.date5.Text = "Date";
+            // 
+            // max6
+            // 
+            this.max6.AutoSize = true;
+            this.max6.BackColor = System.Drawing.Color.Transparent;
+            this.max6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.max6.ForeColor = System.Drawing.Color.DarkRed;
+            this.max6.Location = new System.Drawing.Point(214, 326);
+            this.max6.Name = "max6";
+            this.max6.Size = new System.Drawing.Size(0, 13);
+            this.max6.TabIndex = 94;
+            // 
+            // min6
+            // 
+            this.min6.AutoSize = true;
+            this.min6.BackColor = System.Drawing.Color.Transparent;
+            this.min6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.min6.ForeColor = System.Drawing.Color.Blue;
+            this.min6.Location = new System.Drawing.Point(176, 326);
+            this.min6.Name = "min6";
+            this.min6.Size = new System.Drawing.Size(0, 13);
+            this.min6.TabIndex = 93;
+            // 
+            // weatherOutput6
+            // 
+            this.weatherOutput6.AutoSize = true;
+            this.weatherOutput6.BackColor = System.Drawing.Color.Transparent;
+            this.weatherOutput6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weatherOutput6.ForeColor = System.Drawing.Color.White;
+            this.weatherOutput6.Location = new System.Drawing.Point(75, 324);
+            this.weatherOutput6.Name = "weatherOutput6";
+            this.weatherOutput6.Size = new System.Drawing.Size(0, 15);
+            this.weatherOutput6.TabIndex = 92;
+            // 
+            // date6
+            // 
+            this.date6.AutoSize = true;
+            this.date6.BackColor = System.Drawing.Color.Transparent;
+            this.date6.ForeColor = System.Drawing.Color.White;
+            this.date6.Location = new System.Drawing.Point(3, 326);
+            this.date6.Name = "date6";
+            this.date6.Size = new System.Drawing.Size(30, 13);
+            this.date6.TabIndex = 91;
+            this.date6.Text = "Date";
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::XMLWeather.Properties.Resources.Weather_App3;
+            this.Controls.Add(this.max6);
+            this.Controls.Add(this.min6);
+            this.Controls.Add(this.weatherOutput6);
+            this.Controls.Add(this.date6);
+            this.Controls.Add(this.max5);
+            this.Controls.Add(this.min5);
+            this.Controls.Add(this.weatherOutput5);
+            this.Controls.Add(this.date5);
+            this.Controls.Add(this.max4);
+            this.Controls.Add(this.min4);
+            this.Controls.Add(this.weatherOutput4);
+            this.Controls.Add(this.date4);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.max3);
             this.Controls.Add(this.min3);
@@ -257,5 +413,17 @@
         private System.Windows.Forms.Label max3;
         private System.Windows.Forms.Label min3;
         private System.Windows.Forms.Label searchLabel;
+        private System.Windows.Forms.Label date4;
+        private System.Windows.Forms.Label weatherOutput4;
+        private System.Windows.Forms.Label max4;
+        private System.Windows.Forms.Label min4;
+        private System.Windows.Forms.Label max5;
+        private System.Windows.Forms.Label min5;
+        private System.Windows.Forms.Label weatherOutput5;
+        private System.Windows.Forms.Label date5;
+        private System.Windows.Forms.Label max6;
+        private System.Windows.Forms.Label min6;
+        private System.Windows.Forms.Label weatherOutput6;
+        private System.Windows.Forms.Label date6;
     }
 }

@@ -15,27 +15,26 @@ namespace XMLWeather
     {
         // TODO: create list to hold day objects
 
-<<<<<<< HEAD
+
         public static List<Day> days = new List<Day>();
         public static string location = "Stratford,CA";
-=======
->>>>>>> 5f907f92d371ffa2035d4a5469e56272fdbdf18c
 
-                
-        
+
+
+
         public Form1()
         {
             InitializeComponent();
 
             ExtractForecast();
             ExtractCurrent();
-            
+
             // open weather screen for todays weather
             CurrentScreen cs = new CurrentScreen();
             this.Controls.Add(cs);
         }
 
-<<<<<<< HEAD
+
         public static void ExtractForecast()
         {
             XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=" + location + "&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
@@ -60,7 +59,7 @@ namespace XMLWeather
                 {
                     days.Add(newDay);
                 }
-                
+
 
             }
         }
@@ -81,31 +80,33 @@ namespace XMLWeather
             days[0].condition = reader.GetAttribute("name");
 
 
-=======
-        private void ExtractForecast()
-        {
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Stratford,CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
 
-            while (reader.Read())
-            {
-                //TODO: create a day object
+            //    public static void ExtractForecast()
+            //    {
+            //        XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Stratford,CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
 
-                //TODO: fill day object with required data
+            //        while (reader.Read())
+            //        {
+            //            //TODO: create a day object
 
-                //TODO: if day object not null add to the days list
-            }
+            //            //TODO: fill day object with required data
+
+            //            //TODO: if day object not null add to the days list
+            //        }
+            //    }
+
+            //    private void ExtractCurrent()
+            //    {
+            //        // current info is not included in forecast file so we need to use this file to get it
+            //        XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Stratford,CA&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
+
+            //        //TODO: find the city and current temperature and add to appropriate item in days list
+
+
+            //    }
+
+
+            //}
         }
-
-        private void ExtractCurrent()
-        {
-            // current info is not included in forecast file so we need to use this file to get it
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Stratford,CA&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
-
-            //TODO: find the city and current temperature and add to appropriate item in days list
->>>>>>> 5f907f92d371ffa2035d4a5469e56272fdbdf18c
-
-        }
-
-
     }
 }

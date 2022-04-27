@@ -47,8 +47,9 @@ namespace XMLWeather
             //clear the list of days on form 1
             Form1.days.Clear();
             //call the extract forecast method on form 1
-            Form1.ExtractCurrent();
             Form1.ExtractForecast();
+            Form1.ExtractCurrent();
+            
             //call the current forecast method on form 1
             //open the current screen
            

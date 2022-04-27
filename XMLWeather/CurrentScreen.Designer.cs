@@ -39,13 +39,14 @@
             this.minOutput = new System.Windows.Forms.Label();
             this.maxOutput = new System.Windows.Forms.Label();
             this.searchLabel = new System.Windows.Forms.Label();
+            this.currentDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // currentOutput
             // 
             this.currentOutput.BackColor = System.Drawing.Color.Transparent;
             this.currentOutput.ForeColor = System.Drawing.Color.White;
-            this.currentOutput.Location = new System.Drawing.Point(131, 136);
+            this.currentOutput.Location = new System.Drawing.Point(131, 173);
             this.currentOutput.Name = "currentOutput";
             this.currentOutput.Size = new System.Drawing.Size(22, 13);
             this.currentOutput.TabIndex = 28;
@@ -88,11 +89,11 @@
             // 
             this.tempLabel.AutoSize = true;
             this.tempLabel.BackColor = System.Drawing.Color.Transparent;
-            this.tempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempLabel.ForeColor = System.Drawing.Color.White;
-            this.tempLabel.Location = new System.Drawing.Point(102, 111);
+            this.tempLabel.Location = new System.Drawing.Point(90, 148);
             this.tempLabel.Name = "tempLabel";
-            this.tempLabel.Size = new System.Drawing.Size(0, 25);
+            this.tempLabel.Size = new System.Drawing.Size(0, 36);
             this.tempLabel.TabIndex = 45;
             // 
             // cityOutput
@@ -111,11 +112,11 @@
             this.divider.AutoSize = true;
             this.divider.BackColor = System.Drawing.Color.Transparent;
             this.divider.ForeColor = System.Drawing.Color.White;
-            this.divider.Location = new System.Drawing.Point(88, 136);
+            this.divider.Location = new System.Drawing.Point(88, 184);
             this.divider.Name = "divider";
-            this.divider.Size = new System.Drawing.Size(76, 13);
+            this.divider.Size = new System.Drawing.Size(82, 13);
             this.divider.TabIndex = 47;
-            this.divider.Text = "-----------------------";
+            this.divider.Text = "-------------------------";
             // 
             // weatherOutput
             // 
@@ -123,7 +124,7 @@
             this.weatherOutput.BackColor = System.Drawing.Color.Transparent;
             this.weatherOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weatherOutput.ForeColor = System.Drawing.Color.White;
-            this.weatherOutput.Location = new System.Drawing.Point(75, 161);
+            this.weatherOutput.Location = new System.Drawing.Point(75, 198);
             this.weatherOutput.Name = "weatherOutput";
             this.weatherOutput.Size = new System.Drawing.Size(0, 17);
             this.weatherOutput.TabIndex = 48;
@@ -132,22 +133,22 @@
             // 
             this.minOutput.AutoSize = true;
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
-            this.minOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.Blue;
-            this.minOutput.Location = new System.Drawing.Point(88, 221);
+            this.minOutput.Location = new System.Drawing.Point(88, 258);
             this.minOutput.Name = "minOutput";
-            this.minOutput.Size = new System.Drawing.Size(0, 13);
+            this.minOutput.Size = new System.Drawing.Size(0, 20);
             this.minOutput.TabIndex = 49;
             // 
             // maxOutput
             // 
             this.maxOutput.AutoSize = true;
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
-            this.maxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.maxOutput.Location = new System.Drawing.Point(134, 221);
+            this.maxOutput.Location = new System.Drawing.Point(134, 258);
             this.maxOutput.Name = "maxOutput";
-            this.maxOutput.Size = new System.Drawing.Size(0, 13);
+            this.maxOutput.Size = new System.Drawing.Size(0, 20);
             this.maxOutput.TabIndex = 50;
             // 
             // searchLabel
@@ -162,12 +163,24 @@
             this.searchLabel.Text = "Search";
             this.searchLabel.Click += new System.EventHandler(this.searchLabel_Click);
             // 
+            // currentDate
+            // 
+            this.currentDate.AutoSize = true;
+            this.currentDate.BackColor = System.Drawing.Color.Transparent;
+            this.currentDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentDate.ForeColor = System.Drawing.Color.White;
+            this.currentDate.Location = new System.Drawing.Point(93, 113);
+            this.currentDate.Name = "currentDate";
+            this.currentDate.Size = new System.Drawing.Size(0, 13);
+            this.currentDate.TabIndex = 52;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::XMLWeather.Properties.Resources.Weather_App3;
+            this.Controls.Add(this.currentDate);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.maxOutput);
             this.Controls.Add(this.minOutput);
@@ -199,5 +212,6 @@
         private System.Windows.Forms.Label minOutput;
         private System.Windows.Forms.Label maxOutput;
         private System.Windows.Forms.Label searchLabel;
+        private System.Windows.Forms.Label currentDate;
     }
 }

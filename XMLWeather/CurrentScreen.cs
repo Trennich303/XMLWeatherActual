@@ -28,6 +28,7 @@ namespace XMLWeather
             minOutput.Text = Math.Round(Convert.ToDouble(Form1.days[0].tempLow)).ToString();
             maxOutput.Text = Math.Round(Convert.ToDouble(Form1.days[0].tempHigh)).ToString();
             weatherOutput.Text = Form1.days[0].condition;
+            currentDate.Text = Form1.days[0].date;
 
             currentTemp = tempLabel.Text;
             tempLabel.Text = $"{currentTemp}°C";
